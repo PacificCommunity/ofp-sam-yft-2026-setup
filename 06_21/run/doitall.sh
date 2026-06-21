@@ -93,22 +93,20 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   1 139 3     # set likelihood function for WF data to normal
   -999 49 20  # divide LL LF sample sizes by 20
   -999 50 20  # divide LL WF sample sizes by 20
-# For longline ALL and Index fisheries, reduce sample size in half
+# For longline ALL/WEST/EAST and Index fisheries, reduce sample size in half
 # so we aren't double counting sample sizes
    -1 49 40   -1 50 40
    -2 49 40   -2 50 40
    -4 49 40   -4 50 40
+   -6 49 40   -6 50 40
    -7 49 40   -7 50 40
    -8 49 40   -8 50 40
-   -9 49 40   -9 50 40
-  -11 49 40  -11 50 40
-  -12 49 40  -12 50 40
-  -29 49 40  -29 50 40
+  -10 49 40  -10 50 40
+  -32 49 40  -32 50 40
   -33 49 40  -33 50 40
   -34 49 40  -34 50 40
   -35 49 40  -35 50 40
   -36 49 40  -36 50 40
-  -37 49 40  -37 50 40
 # Tag dynamics settings
   1 33 99    # maximum tag reporting rate for all fisheries is 0.99
   2 96 12    # pool tags after 12 quarters at liberty
