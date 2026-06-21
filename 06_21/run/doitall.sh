@@ -33,11 +33,11 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -999 13 0
 # Survey fisheries defined
 # CPUE variation  Index wt   Time varying CV
-  -33 94 1        -33 92 61  -33 66 0
-  -34 94 1        -34 92 77  -34 66 0
-  -35 94 1        -35 92 79  -35 66 0
-  -36 94 1        -36 92 82  -36 66 0
-  -37 94 1        -37 92 74  -37 66 0
+  -32 94 1        -32 92 61  -32 66 0
+  -33 94 1        -33 92 77  -33 66 0
+  -34 94 1        -34 92 79  -34 66 0
+  -35 94 1        -35 92 82  -35 66 0
+  -36 94 1        -36 92 74  -36 66 0
 # Grouping flags for survey CPUE
    -1 99 1
    -2 99 2
@@ -71,11 +71,10 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -30 99 30
   -31 99 31
   -32 99 32
-  -33 99 33
-  -34 99 33
-  -35 99 33
-  -36 99 33
-  -37 99 33
+  -33 99 32
+  -34 99 32
+  -35 99 32
+  -36 99 32
 # Recruitment and initial population settings
   1 149 100  # recruitment deviation penalty
   1 400 6    # final six recruitment deviates set to zero
