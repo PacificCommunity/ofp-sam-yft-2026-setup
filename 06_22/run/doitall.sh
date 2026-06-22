@@ -175,8 +175,8 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -16 24 16
   -17 24 17
   -18 24 18
-  -19 24 19 A
-  -20 24 20 B
+  -19 24 19 # 19 PS ASS 2 has very few samples, link w/fishery 28 PS ASS WEST 4
+  -20 24 20 # 20 PS UNA 2 has very few samples, link w/fishery 29 PS UNA WEST 4
   -21 24 21
   -22 24 22
   -23 24 23
@@ -184,11 +184,11 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -25 24 25
   -26 24 26
   -27 24 27
-  -28 24 28 A
-  -29 24 29
-  -30 24 30 B
-  -31 24 31
-  -32 24 30
+  -28 24 19 # PS ASS WEST 4
+  -29 24 28
+  -30 24 20 # PS UNA WEST 4
+  -31 24 29
+  -32 24 30 # Index fisheries
   -33 24 30
   -34 24 30
   -35 24 30
