@@ -24,7 +24,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
 # Catch equation bounds
   2 116 70   # value for Zmax_fish in catch equations
   2 189 80   # fraction of Zmax_fish above which penalty is calculated
-  1 382 300  # weight for Zmax_fish penalty - set to 300 to avoid triggering Zmax_flag=1
+  1 382 300  # weight for Zmax_fish penalty, set to 300 to avoid triggering Zmax_flag=1
 # Deactivate any catch errors flags
   -999 1 0
   -999 4 0
@@ -78,7 +78,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
 # Recruitment and initial population settings
   1 149 100  # recruitment deviation penalty
   1 400 6    # final six recruitment deviates set to zero
-# Fixed terminal recruitments are arithmetic mean of remaining period (not default geometric mean)
+# Fixed terminal recruitments are mean of remaining period (not default geomean)
   1 398 1
   2 177 1          # use old totpop scaling method
   2 32 1           # and estimate totpop parameter
@@ -193,7 +193,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -34 24 30
   -35 24 30
   -36 24 30
-# Non-decreasing selectivity for at least one index/longline fishery in each region
+# Non-decreasing selectivity for at least one Index/LL fishery in each region
   -33 16 1
   -34 16 1
   -35 16 1
@@ -209,7 +209,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -11 75 2
   -12 75 2
   -29 75 2
-  -17 16 2  -17 3 12  # force selectivity to zero for large fish in small MISC fisheries
+  -17 16 2  -17 3 12  # force selectivity to 0 for large fish in small MISC fisheries
   -23 16 2  -23 3 12
   -28 16 2  -28 3 12
   -32 16 2  -32 3 12
@@ -217,7 +217,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -20 16 2  -20 3 24
   -21 16 2  -21 3 24
   -22 16 2  -22 3 24
-# Set first age class for PS and PL fisheries to 0 to prevent weird recruitment distributions
+# Set first age class for PS and PL fisheries to 0 to prevent weird recruitment
   -13 75 1
   -14 75 1
   -15 75 1
