@@ -21,6 +21,5 @@ cp(file.path(path.tag, "yft.2023.new.structure-low.recaps.removed.tag"),
 # Copy executable
 cp(file.path(path.exe, "mfclo64"), "run")
 
-# Copy doitall and model config
-cp(file.path(path.d23, "doitall.sh"), "run")
+# Copy model config
 cp(file.path(path.d23, "mfcl.cfg"), "run")
