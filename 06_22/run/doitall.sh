@@ -194,41 +194,41 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -35 24 30
   -36 24 30
 # Non-decreasing selectivity for at least one Index/LL fishery in each region
+  -32 16 1
   -33 16 1
   -34 16 1
   -35 16 1
   -36 16 1
-  -37 16 1
 # Make some longline selectivites 0 for first few age classes
    -2 75 2
    -4 75 2
    -5 75 2
-   -6 75 2
    -7 75 2
+   -8 75 2
    -9 75 2
-  -11 75 2
-  -12 75 2
-  -29 75 2
-  -17 16 2  -17 3 12  # force selectivity to 0 for large fish in small MISC fisheries
+  -10 75 2
+  -13 16 2  -13 3 24
+  -16 16 2  -16 3 12
+  -17 16 2  -17 3 12  # PS PH ID weird bump at 110 cm
+  -18 16 2  -18 3 12  # PS PH ID weird bump at 110 cm
+  -21 16 2  -21 3 12  # force selectivity to 0 for large fish in small MISC fisheries
+  -22 16 2  -22 3 12
   -23 16 2  -23 3 12
-  -28 16 2  -28 3 12
-  -32 16 2  -32 3 12
-  -24 16 2  -24 3 12  # PS PH ID weird bump at 110 cm
-  -20 16 2  -20 3 24
-  -21 16 2  -21 3 24
-  -22 16 2  -22 3 24
+  -24 16 2  -24 3 24
+  -27 16 2  -27 3 24
 # Set first age class for PS and PL fisheries to 0 to prevent weird recruitment
+  -12 75 1
   -13 75 1
-  -14 75 1
-  -15 75 1
-  -16 75 1
-  -18 75 4
+  -14 75 4
+  -15 75 4
   -19 75 1
   -20 75 1
-  -21 75 1
-  -22 75 1
+  -24 75 1
   -25 75 1
   -26 75 1
+  -27 75 1
+  -28 75 1
+  -29 75 1
   -30 75 1
   -31 75 1
 # Turn on weighted spline for calculating maturity at age
@@ -261,7 +261,7 @@ PHASE2
 # ---------
 
 mfclo64 yft.frq 02.par 03.par -file - <<PHASE3
-  2 70 1   # activate time series of reg recruitment parameters
+  2 70 1   # activate time series of regional recruitment parameters
   2 71 1   # estimate temporal changes in recruitment distribution
   2 178 1  # constrain regional recruitments
 PHASE3
