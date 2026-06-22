@@ -157,43 +157,42 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -999 57 3  # use cubic spline selectivity
   -999 61 5  # with 5 nodes for cubic spline
 # Grouping of fisheries with common selectivity
-   -1 24 1   # LL ALL 1
-   -2 24 2   # LL ALL 2
-   -3 24 3   # LL US 2
-   -4 24 4   # LL ALL 3
-   -9 24 5   # LL ALL 4
-  -12 24 6   # LL ALL 6
-  -11 24 7   # LL ALL 5
-  -29 24 7   # LL ALL 9
-   -5 24 8   # LL OS 3
-   -6 24 9   # LL OS 7
-   -7 24 10  # LL ALL 7
-   -8 24 11  # LL ALL 8
-  -10 24 12  # LL AU 5
-  -27 24 12  # LL AU 9
-  -13 24 13  # PS ASS
-  -30 24 13  # combine because small sample size
-  -15 24 14
-  -25 24 15
-  -14 24 16  # PS UNA
-  -31 24 16  # combine because small sample size
-  -16 24 17
-  -26 24 18
-  -17 24 19  # Dom PH
-  -18 24 20  # HL ID PH
-  -19 24 21  # PS JP 1
-  -20 24 22  # PL JP 1, 3, 8
-  -21 24 23
-  -22 24 24
-  -23 24 25  # Dom ID and VN PL region 7
-  -28 24 26
-  -32 24 27
-  -24 24 28
-  -33 24 29  # index fisheries
-  -34 24 29
-  -35 24 29
-  -36 24 29
-  -37 24 29
+   -1 24 1
+   -2 24 2
+   -3 24 3
+   -4 24 4
+   -5 24 5
+   -6 24 6
+   -7 24 7
+   -8 24 8
+   -9 24 9
+  -10 24 10
+  -11 24 11
+  -12 24 12
+  -13 24 13
+  -14 24 14
+  -15 24 15
+  -16 24 16
+  -17 24 17
+  -18 24 18
+  -19 24 19 A
+  -20 24 20 B
+  -21 24 21
+  -22 24 22
+  -23 24 23
+  -24 24 24
+  -25 24 25
+  -26 24 26
+  -27 24 27
+  -28 24 28 A
+  -29 24 29
+  -30 24 30 B
+  -31 24 31
+  -32 24 30
+  -33 24 30
+  -34 24 30
+  -35 24 30
+  -36 24 30
 # Non-decreasing selectivity for at least one index/longline fishery in each region
   -33 16 1
   -34 16 1
