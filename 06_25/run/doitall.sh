@@ -253,7 +253,8 @@ PHASE1
 
 mfclo64 yft.frq 01.par 02.par -file - <<PHASE2
   2 113 0  # turn off useless parameter rec_init_diff
-  1 1 500  # set max evaluations to 500
+  1 1 500  # max evaluations
+  1 50 -4  # convergence criterion
 PHASE2
 
 # ---------
@@ -293,9 +294,9 @@ PHASE5
 
 mfclo64 yft.frq 05.par 06.par -file - <<PHASE6
   1 240 1  # activate model fit to observed age-length data
-  1 12 0   # do not estimate mean length of age 1
-  1 13 0   # do not estimate mean length of largest age class
-  1 14 0   # do not estimate von Bertalanffy K
+  1 12 0   # do not estimate L1 growth parameter
+  1 13 0   # do not estimate L2 growth parameter
+  1 14 0   # do not estimate K growth parameter
 PHASE6
 
 # ---------
@@ -342,8 +343,6 @@ mfclo64 yft.frq 08.par 09.par -file - <<PHASE9
   1 187 1  # write temporary_tag_report
   1 188 1  # write ests.rep
   1 189 1  # write .fit files
-  1 50 -2  # convergence criteria
-  1 1 500  # extra evals
 PHASE9
 
 # ----------
@@ -351,10 +350,8 @@ PHASE9
 # ----------
 
 mfclo64 yft.frq 09.par 10.par -file - <<PHASE10
-  2 145 -1   # use SRR parameters - low penalty for deviation
-  1 1 10000
-  1 50 -5
   2 116 300  # increase Z bound for NR computations to 3.0
+  2 145 -1   # use SRR parameters, low penalty for deviation
 PHASE10
 
 # ----------
@@ -362,9 +359,9 @@ PHASE10
 # ----------
 
 mfclo64 yft.frq 10.par 11.par -file - <<PHASE11
-  1 13 1     # estimate mean length of largest age class
-  1 14 1     # estimate von Bertalanffy K
-  1 121 1    # estimate Lorenzen scaling parameter
-  1 1 10000
-  1 50 -5
+  1 13 1    # estimate L2 growth parameter
+  1 14 1    # estimate K growth parameter
+  1 246 1   # produce indepvar.rpt
+  1 1 5000  # max evaluations
+  1 50 -4   # convergence criterion
 PHASE11
