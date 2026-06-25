@@ -80,11 +80,11 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   1 400 6    # final six recruitment deviates set to zero
 # Fixed terminal recruitments are mean of remaining period (not default geomean)
   1 398 1
-  2 177 1          # use old totpop scaling method
-  2 32 1           # and estimate totpop parameter
-  2 93 4           # set no. of recruitments per year to 4
-  2 57 4           # set no. of recruitments per year to 4
-  2 94 1 2 128 10  # initial Z = 1.0*M, i.e. initial F = 0
+  2 177 1           # use old totpop scaling method
+  2 32 1            # and estimate totpop parameter
+  2 93 4            # set no. of recruitments per year to 4
+  2 57 4            # set no. of recruitments per year to 4
+  2 94 1 2 128 100  # initial Z = 1.0*M, i.e. initial F = 0
 # Movement
   2 69 1
 # Likelihood component settings
@@ -252,8 +252,8 @@ PHASE1
 # ---------
 
 mfclo64 yft.frq 01.par 02.par -file - <<PHASE2
-  1 1 1000  # set max evaluations to 1000
-  2 113 0   # turn off useless parameter rec_init_diff
+  2 113 0  # turn off useless parameter rec_init_diff
+  1 1 500  # set max evaluations to 500
 PHASE2
 
 # ---------
