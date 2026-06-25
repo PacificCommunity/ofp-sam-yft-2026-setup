@@ -153,7 +153,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -36 32 23
 # Selectivity settings
   -999 3 37  # all selectivities equal for age class 37 and older
-  -999 26 2  # set length-dependent selectivity option
+  -999 26 2  # let growth variability vary with length
   -999 57 3  # use cubic spline selectivity
   -999 61 5  # with 5 nodes for cubic spline
 # Grouping of fisheries with common selectivity
@@ -235,7 +235,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   2 188 2
 # Set Lorenzen M
   2 109 3   # select Lorenzen curve
-  1 121 0   # do not estimate Lorenzen scaling parameter yet
+  1 121 0   # do not estimate Lorenzen scaling parameter
 # Truncate tails off size compositions and filter out small samples
   1 311 1   # set tail compression for LF data
   1 301 1   # set tail compression for WF data
@@ -252,7 +252,7 @@ PHASE1
 # ---------
 
 mfclo64 yft.frq 01.par 02.par -file - <<PHASE2
-  1 1 1000  # set max. number of function evaluations per phase to 1000
+  1 1 1000  # set max evaluations to 1000
   2 113 0   # turn off useless parameter rec_init_diff
 PHASE2
 
